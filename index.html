@@ -1,78 +1,132 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
-<html>
+<html lang="en">
+
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Venkata Naga Kiran Katari | Cybersecurity Portfolio</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Cybersecurity Portfolio of Venkata Naga Kiran Katari" />
-<link rel="stylesheet" href="assets/css/main.css" />
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0b0f19;
+color:white;
+}
+
+header{
+padding:80px 20px;
+text-align:center;
+background:#0f172a;
+}
+
+header h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+header p{
+color:#9ca3af;
+font-size:18px;
+}
+
+button{
+background:#00ff9c;
+border:none;
+padding:12px 25px;
+margin-top:20px;
+font-size:16px;
+cursor:pointer;
+border-radius:5px;
+}
+
+section{
+padding:60px 10%;
+}
+
+h2{
+color:#00ff9c;
+margin-bottom:20px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.card{
+background:#111827;
+padding:20px;
+border-radius:8px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#020617;
+}
+
+a{
+color:#00ff9c;
+text-decoration:none;
+}
+
+</style>
+
 </head>
 
-<body class="is-preload">
+<body>
 
-<div id="wrapper">
-
-<section class="intro">
 <header>
+
 <h1>Venkata Naga Kiran Katari</h1>
-<p>Cybersecurity Graduate Student | Rowan University | Ethical Hacking & Network Security Enthusiast</p>
 
-<ul class="actions">
-<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-<li><a href="CV-KIRAN.pdf" class="button primary">Download Resume</a></li>
-</ul>
+<p>
+Cybersecurity Graduate Student | Rowan University  
+Ethical Hacking • Network Security • Threat Analysis
+</p>
+
+<a href="CV-KIRAN.pdf">
+<button>Download Resume</button>
+</a>
 
 </header>
 
-<div class="content">
-<span class="image fill"><img src="images/profile.jpg" alt="Profile Image"></span>
-</div>
-</section>
+<section>
 
-<section id="first">
-
-<header>
 <h2>About Me</h2>
-</header>
-
-<div class="content">
 
 <p>
-Cybersecurity-focused Computer Science graduate student at Rowan University with strong interests in
-threat analysis, network defense, and ethical hacking. Experienced in using security tools such as
-Wireshark, Nmap, Burp Suite, Splunk, and Microsoft Sentinel to identify vulnerabilities,
-monitor threats, and improve system security.
+Cybersecurity-focused Computer Science graduate student at Rowan University with strong interests
+in threat analysis, network defense, and ethical hacking. Experienced in tools such as Wireshark,
+Nmap, Burp Suite, Splunk, and Microsoft Sentinel for identifying vulnerabilities and improving
+system security.
 </p>
-
-<span class="image main">
-<img src="images/pic02.jpg" alt="Cybersecurity Image">
-</span>
-
-</div>
 
 </section>
 
 <section>
 
-<header>
 <h2>Technical Skills</h2>
-</header>
 
-<div class="content">
+<div class="skills">
 
-<ul class="feature-icons">
-
-<li class="icon solid fa-code">Python, Java, C, SQL</li>
-<li class="icon solid fa-laptop">Linux, PowerShell</li>
-<li class="icon solid fa-network-wired">Network Security</li>
-<li class="icon solid fa-shield-alt">Ethical Hacking</li>
-<li class="icon solid fa-search">SIEM, SOC, Incident Response</li>
-<li class="icon solid fa-lock">Cryptography, OWASP</li>
-<li class="icon solid fa-bug">Burp Suite, Nmap, Wireshark</li>
-<li class="icon solid fa-server">Splunk, Snort, Microsoft Sentinel</li>
-
-</ul>
+<div class="card">Python</div>
+<div class="card">Java</div>
+<div class="card">C</div>
+<div class="card">SQL</div>
+<div class="card">Linux</div>
+<div class="card">Network Security</div>
+<div class="card">Ethical Hacking</div>
+<div class="card">SIEM / SOC</div>
+<div class="card">Burp Suite</div>
+<div class="card">Nmap</div>
+<div class="card">Wireshark</div>
+<div class="card">Splunk</div>
 
 </div>
 
@@ -80,43 +134,45 @@ monitor threats, and improve system security.
 
 <section>
 
-<header>
-<h2>Cybersecurity Projects</h2>
-<p>Projects developed during my academic work and cybersecurity research.</p>
-</header>
+<h2>Projects</h2>
 
-<div class="content">
+<div class="card">
 
-<section>
-<header>
 <h3>IoT Intrusion Detection System</h3>
-<p>
-Developed an IoT intrusion detection system using deep learning models (CNN, LSTM, and DNN)
-to detect cyber attacks in cyber-physical systems. The model achieved high accuracy on benchmark
-datasets and was deployed using a Flask web application for real-time monitoring.
-</p>
-</header>
-</section>
 
-<section>
-<header>
+<p>
+Developed an intrusion detection system using deep learning models
+(CNN, LSTM, DNN) to detect cyber attacks in cyber-physical systems.
+Implemented a Flask web application for real-time monitoring.
+</p>
+
+</div>
+
+<br>
+
+<div class="card">
+
 <h3>Keylogger Security Demonstration</h3>
-<p>
-Built a proof-of-concept keylogger application to demonstrate how keystroke capture works.
-This project was created strictly for cybersecurity awareness and ethical security research.
-</p>
-</header>
-</section>
 
-<section>
-<header>
-<h3>Student Database Management System</h3>
 <p>
-Developed a web-based student database management system using PHP, HTML, CSS, and MySQL to
-manage student records, attendance, and academic information with secure database operations.
+Built a proof-of-concept keylogger application to demonstrate
+how keystroke capture works for cybersecurity awareness
+and ethical security research.
 </p>
-</header>
-</section>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h3>Student Database Management System</h3>
+
+<p>
+Developed a web-based student management system using
+PHP, HTML, CSS, and MySQL for managing student
+records and academic information securely.
+</p>
 
 </div>
 
@@ -124,11 +180,7 @@ manage student records, attendance, and academic information with secure databas
 
 <section>
 
-<header>
 <h2>Certifications</h2>
-</header>
-
-<div class="content">
 
 <ul>
 
@@ -138,90 +190,37 @@ manage student records, attendance, and academic information with secure databas
 
 </ul>
 
-</div>
-
 </section>
 
 <section>
 
-<header>
-<h2>Get In Touch</h2>
-</header>
+<h2>Contact</h2>
 
-<div class="content">
+<p>Email: <a href="mailto:kirankatari99@gmail.com">kirankatari99@gmail.com</a></p>
+
+<p>Location: Philadelphia, Pennsylvania</p>
 
 <p>
-Feel free to reach out for cybersecurity collaboration, internships,
-or professional networking opportunities.
+LinkedIn:
+<a href="https://www.linkedin.com/in/venkata-naga-kiran-katari-b094361a9">
+linkedin.com/in/venkata-naga-kiran-katari
+</a>
 </p>
 
-</div>
-
-<footer>
-
-<ul class="items">
-
-<li>
-<h3>Email</h3>
-<a href="mailto:kirankatari99@gmail.com">kirankatari99@gmail.com</a>
-</li>
-
-<li>
-<h3>Phone</h3>
-<span>+1 703-783-999</span>
-</li>
-
-<li>
-<h3>Location</h3>
-<span>Philadelphia, Pennsylvania, USA</span>
-</li>
-
-<li>
-<h3>Profiles</h3>
-
-<ul class="icons">
-
-<li>
-<a href="https://www.linkedin.com/in/venkata-naga-kiran-katari-b094361a9"
-class="icon brands fa-linkedin">
-<span class="label">LinkedIn</span>
+<p>
+GitHub:
+<a href="https://github.com/kirankatari">
+github.com/kirankatari
 </a>
-</li>
-
-<li>
-<a href="https://github.com/kirankatari"
-class="icon brands fa-github">
-<span class="label">GitHub</span>
-</a>
-</li>
-
-</ul>
-
-</li>
-
-</ul>
-
-</footer>
+</p>
 
 </section>
 
-<div class="copyright">
-© 2026 Venkata Naga Kiran Katari | Cybersecurity Portfolio
-</div>
+<footer>
 
-</div>
+<p>© 2026 Venkata Naga Kiran Katari | Cybersecurity Portfolio</p>
 
-<script src="assets/js/jquery.min.js"></script>
-
-<script src="assets/js/jquery.scrolly.min.js"></script>
-
-<script src="assets/js/browser.min.js"></script>
-
-<script src="assets/js/breakpoints.min.js"></script>
-
-<script src="assets/js/util.js"></script>
-
-<script src="assets/js/main.js"></script>
+</footer>
 
 </body>
 </html>
