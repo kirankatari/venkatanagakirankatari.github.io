@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,19 +18,62 @@ background:#0b0f19;
 color:white;
 }
 
-header{
-padding:80px 20px;
-text-align:center;
-background:#0f172a;
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#020617;
+padding:15px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
 }
 
-header h1{
-font-size:48px;
+nav a{
+color:#00ff9c;
+text-decoration:none;
+margin-left:20px;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background-image:url("images/cyber-bg.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:60px;
 margin-bottom:10px;
 }
 
-header p{
-color:#9ca3af;
+.hero p{
+color:#cbd5e1;
 font-size:18px;
 }
 
@@ -43,8 +87,11 @@ cursor:pointer;
 border-radius:5px;
 }
 
+/* SECTIONS */
+
 section{
-padding:60px 10%;
+padding:100px 10%;
+border-bottom:1px solid #1e293b;
 }
 
 h2{
@@ -55,13 +102,14 @@ margin-bottom:20px;
 .skills{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
+gap:20px;
 }
 
 .card{
 background:#111827;
 padding:20px;
-border-radius:8px;
+border-radius:10px;
+text-align:center;
 }
 
 footer{
@@ -70,46 +118,67 @@ padding:40px;
 background:#020617;
 }
 
-a{
-color:#00ff9c;
-text-decoration:none;
-}
-
 </style>
 
 </head>
 
 <body>
 
-<header>
+<!-- NAVBAR -->
+
+<nav>
+
+<div><b>Kiran</b></div>
+
+<div>
+
+<a href="#about">About</a> <a href="#skills">Skills</a> <a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div class="hero-content">
 
 <h1>Venkata Naga Kiran Katari</h1>
 
 <p>
-Cybersecurity Graduate Student | Rowan University  
-Ethical Hacking • Network Security • Threat Analysis
+Cybersecurity Graduate Student | Ethical Hacking | Network Security
 </p>
 
 <a href="CV-KIRAN.pdf">
+
 <button>Download Resume</button>
+
 </a>
 
-</header>
+</div>
 
-<section>
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
 
 <h2>About Me</h2>
 
 <p>
+
 Cybersecurity-focused Computer Science graduate student at Rowan University with strong interests
-in threat analysis, network defense, and ethical hacking. Experienced in tools such as Wireshark,
-Nmap, Burp Suite, Splunk, and Microsoft Sentinel for identifying vulnerabilities and improving
-system security.
+in threat analysis, network defense, and ethical hacking. Experienced with tools such as
+Wireshark, Nmap, Burp Suite, Splunk, and Microsoft Sentinel.
+
 </p>
 
 </section>
 
-<section>
+<!-- SKILLS -->
+
+<section id="skills">
 
 <h2>Technical Skills</h2>
 
@@ -132,85 +201,26 @@ system security.
 
 </section>
 
-<section>
+<!-- CONTACT -->
 
-<h2>Projects</h2>
-
-<div class="card">
-
-<h3>IoT Intrusion Detection System</h3>
-
-<p>
-Developed an intrusion detection system using deep learning models
-(CNN, LSTM, DNN) to detect cyber attacks in cyber-physical systems.
-Implemented a Flask web application for real-time monitoring.
-</p>
-
-</div>
-
-<br>
-
-<div class="card">
-
-<h3>Keylogger Security Demonstration</h3>
-
-<p>
-Built a proof-of-concept keylogger application to demonstrate
-how keystroke capture works for cybersecurity awareness
-and ethical security research.
-</p>
-
-</div>
-
-<br>
-
-<div class="card">
-
-<h3>Student Database Management System</h3>
-
-<p>
-Developed a web-based student management system using
-PHP, HTML, CSS, and MySQL for managing student
-records and academic information securely.
-</p>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Certifications</h2>
-
-<ul>
-
-<li>Microsoft Azure Fundamentals (AZ-900)</li>
-<li>Introduction to Cyber Security – Coursera</li>
-<li>CompTIA Security+ (In Progress)</li>
-
-</ul>
-
-</section>
-
-<section>
+<section id="contact">
 
 <h2>Contact</h2>
 
-<p>Email: <a href="mailto:kirankatari99@gmail.com">kirankatari99@gmail.com</a></p>
-
-<p>Location: Philadelphia, Pennsylvania</p>
+<p>Email: kirankatari99@gmail.com</p>
 
 <p>
-LinkedIn:
-<a href="https://www.linkedin.com/in/venkata-naga-kiran-katari-b094361a9">
-linkedin.com/in/venkata-naga-kiran-katari
+GitHub:
+<a href="https://github.com/kirankatari" style="color:#00ff9c">
+github.com/kirankatari
 </a>
 </p>
 
 <p>
-GitHub:
-<a href="https://github.com/kirankatari">
-github.com/kirankatari
+LinkedIn:
+<a href="https://www.linkedin.com/in/venkata-naga-kiran-katari-b094361a9"
+style="color:#00ff9c">
+linkedin.com/in/venkata-naga-kiran-katari
 </a>
 </p>
 
@@ -218,9 +228,10 @@ github.com/kirankatari
 
 <footer>
 
-<p>© 2026 Venkata Naga Kiran Katari | Cybersecurity Portfolio</p>
+© 2026 Venkata Naga Kiran Katari | Cybersecurity Portfolio
 
 </footer>
 
 </body>
+
 </html>
